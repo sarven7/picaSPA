@@ -1,0 +1,27 @@
+﻿<header>
+    <div class="text">PICA SPA</div>
+</header>
+
+<!--<div ng-controller="UserCtrl">
+    <span></span>
+    <form ng-submit="submit()">
+        <input ng-model="user.username" type="text" name="user" placeholder="Username" />
+        <input ng-model="user.password" type="password" name="pass" placeholder="Password" />
+        <input type="submit" value="Login" />
+    </form>
+</div>-->
+
+
+
+<form class="filter" name="filterForm">
+    <input ng-model="query"> 
+    <button ng-click="doRequest()">Search</button>
+</form>
+<section>
+    <div id="cardsList">
+        <div ng-repeat="card in cards" class="cardItem">
+            {{card}}
+        </div>
+    </div>
+</section>
+<!--<a href="#/cards/{{card.id}}"><img class="small" ng-src="{{'http://www.urzagatherer.com/cards/' + card.picturePath}}" /></a>-->
