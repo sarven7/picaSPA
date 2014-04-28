@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        // Must be first. IE10 mobile viewport fix
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            var mq = "@-ms-viewport{width:auto!important}";
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
+
+    <title>MTG Browser</title>
+    <link href="content/index.css" rel="stylesheet" />
+    
+</head>
+<body ng-app="mainApp">
+    <div ng-view id="mainView"></div>
+
+
+    <!-- Scripts -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-animate.min.js"></script>
+    <script src="scripts/angular-resource.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+
+    <!-- Application -->
+    <script src="app/app.js"></script>
+
+    <!-- Services/Factories/Providers/Common -->
+    <script src="app/services/dataService.js"></script>
+    <script src="app/common/filters.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/controllers/search.js"></script>
+    <script src="app/controllers/loginAndRedirect.js"></script>
+    <script src="app/controllers/tagDetail.js"></script>
+    
+</body>
+</html>
