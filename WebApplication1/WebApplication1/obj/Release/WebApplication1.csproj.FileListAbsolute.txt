@@ -1,0 +1,6 @@
+C:\picaSPA\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\picaSPA\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\picaSPA\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
+C:\picaSPA\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb
+C:\picaSPA\WebApplication1\WebApplication1\obj\Release\WebApplication1.csprojResolveAssemblyReference.cache

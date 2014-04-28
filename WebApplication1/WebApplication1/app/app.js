@@ -1,39 +1,30 @@
-﻿var mainApp = angular.module('mainApp', ['ngRoute', 'ngAnimate', 'cardsControllers']);
+﻿(function () {
+    'use strict';
+    
+    var mainApp = angular.module('mainApp', ['ngRoute','ngAnimate']);
 
-mainApp.config([
-    '$routeProvider',
-    function($routeProvider) {
-        $routeProvider.
-            when('/cards', {
-                templateUrl: 'Views/list.html',
-                controller: 'cardsListController'
-            }).
-            when('/cards/:cardId', {
-                templateUrl: 'Views/detail.html',
-                controller: 'cardDetailController'
-            }).
-            otherwise({
-                redirectTo: '/cards'
-            });
-    }
-]);
-
-mainApp.filter('filterAndReduce', function () {
-    return function (cards, count, query) {
-        if (!query) {
-            return cards.slice(0, count);
+    mainApp.config(['$routeProvider',
+        function($routeProvider) {
+            $routeProvider.
+                when('/', { //redirects to server login, gets cookie with token
+                    templateUrl: 'app/views/list.html',
+                    controller: 'loginAndRedirect'
+                }).
+                when('/tagSearch', {
+                    templateUrl: 'app/views/list.html',
+                    controller: 'search'
+                }).
+                when('/tagDetail/:tagId', {
+                    templateUrl: 'app/views/detail.html',
+                    controller: 'tagDetail'
+                }).
+                otherwise({
+                    redirectTo: '/'
+                });
         }
+    ]);
+    
+    mainApp.run(['$route', function ($route) {
 
-        var filtered = [];
-
-        query = query.toLowerCase();
-
-        angular.forEach(cards, function (card) {
-            if (card.nameEn.toLowerCase().indexOf(query) !== -1) {
-                filtered.push(card);
-            }
-        });
-
-        return filtered.slice(0, count);
-    };
-});
+    }]);
+})();
