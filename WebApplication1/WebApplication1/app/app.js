@@ -3,16 +3,16 @@
     
     var mainApp = angular.module('mainApp', ['ngRoute','ngAnimate']);
 
-    mainApp.config(['$routeProvider',
-        function($routeProvider) {
+    mainApp.config(['$routeProvider', '$httpProvider',
+        function($routeProvider, $httpProvider) {
             $routeProvider.
-                when('/', { //redirects to server login, gets cookie with token
-                    templateUrl: 'app/views/list.html',
-                    controller: 'loginAndRedirect'
-                }).
-                when('/tagSearch', {
+                when('/', {
                     templateUrl: 'app/views/list.html',
                     controller: 'search'
+                }).
+                when('/login', {  //redirects to server login, gets cookie with token
+                    templateUrl: 'app/views/list.html',
+                    controller: 'loginAndRedirect'
                 }).
                 when('/tagDetail/:tagId', {
                     templateUrl: 'app/views/detail.html',
@@ -21,6 +21,9 @@
                 otherwise({
                     redirectTo: '/'
                 });
+
+            //$httpProvider.defaults.useXDomain = true;
+            //delete $httpProvider.defaults.headers.common['X-Requested-With'];
         }
     ]);
     

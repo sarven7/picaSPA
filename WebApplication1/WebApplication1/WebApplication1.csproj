@@ -75,7 +75,7 @@
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="app\app.js" />
-    <Content Include="content\index.css" />
+    <Content Include="app\content\index.css" />
     <Content Include="index.html" />
     <Content Include="app\services\dataService.js" />
     <Content Include="app\views\detail.html" />
@@ -83,6 +83,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="app\controllers\HomeController.cs" />
+    <Compile Include="app\controllers\LoginController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
