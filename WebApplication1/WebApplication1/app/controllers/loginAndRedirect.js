@@ -8,11 +8,6 @@
         ['$scope', loginAndRedirect]);
 
     function loginAndRedirect($scope) {
-        var vm = this;
 
-        vm.activate = activate;
-        vm.title = 'loginAndRedirect';
-
-        function activate() { }
     }
 })();

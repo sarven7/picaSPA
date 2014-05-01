@@ -1,11 +1,15 @@
-c:\users\sbuyuker\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
-c:\users\sbuyuker\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
-c:\users\sbuyuker\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
-c:\users\sbuyuker\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
-c:\users\sbuyuker\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\sbuyuker\documents\visual studio 2013\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
-C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
-C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\WebApplication1.dll
-C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\WebApplication1.pdb
-C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
-C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\picaSPA\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\picaSPA\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\picaSPA\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\System.Web.Http.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\WebActivatorEx.dll
+C:\picaSPA\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\picaSPA\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.xml
+C:\picaSPA\WebApplication1\WebApplication1\bin\System.Web.Http.xml
+C:\picaSPA\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.xml
+C:\picaSPA\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\picaSPA\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
