@@ -8,6 +8,6 @@
         ['$scope', loginAndRedirect]);
 
     function loginAndRedirect($scope) {
-
+        window.location.href = "http://localhost:60646/Login/Index";
     }
 })();

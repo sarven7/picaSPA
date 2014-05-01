@@ -12,12 +12,6 @@ namespace WebApplication1.App_Start
     {
         public static void Register()
         {
-            //RouteTable.Routes.MapRoute(
-            //    name:"Login",
-            //    url:"{controller}/{action}/{id}",
-            //    defaults: new { controller = "Login", action = "Index", id = RouteParameter.Optional }
-            //);
-
             GlobalConfiguration.Configuration.Routes.MapHttpRoute(
                 name: "login",
                 routeTemplate: "{controller}/{action}"

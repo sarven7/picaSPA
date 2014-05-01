@@ -86,7 +86,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\saveToken.js" />
+    <Content Include="app\views\redirectToLogin.html" />
     <Content Include="packages.config" />
+    <Content Include="scripts\angular-animate.min.js.map" />
+    <Content Include="scripts\angular-route.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -100,16 +104,18 @@
     <Content Include="app\controllers\search.js" />
     <Content Include="app\controllers\tagDetail.js" />
     <Content Include="scripts\angular-animate.min.js" />
+    <Content Include="scripts\angular-locale_en-ie.js" />
     <Content Include="scripts\angular-resource.min.js" />
     <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular-sanitize.js" />
     <Content Include="scripts\angular.js" />
-    <Content Include="scripts\angular.min.js" />
     <Content Include="app\app.js" />
     <Content Include="app\content\index.css" />
     <Content Include="index.html" />
     <Content Include="app\services\dataService.js" />
     <Content Include="app\views\detail.html" />
     <Content Include="app\views\list.html" />
+    <Content Include="scripts\jquery-2.0.3.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -17,24 +17,23 @@
 <body ng-app="mainApp">
     <div ng-view id="mainView"></div>
 
-
     <!-- Scripts -->
+    <script src="scripts/jquery-2.0.3.js"></script>
     <script src="scripts/angular.js"></script>
     <script src="scripts/angular-animate.min.js"></script>
-    <script src="scripts/angular-resource.min.js"></script>
     <script src="scripts/angular-route.min.js"></script>
-
+    <script src="scripts/angular-sanitize.js"></script>
     <!-- Application -->
     <script src="app/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/controllers/search.js"></script>
+    <script src="app/controllers/tagDetail.js"></script>
+    <script src="app/controllers/saveToken.js"></script>
+    <script src="app/controllers/loginAndRedirect.js"></script>
 
     <!-- Services/Factories/Providers/Common -->
     <script src="app/services/dataService.js"></script>
     <script src="app/common/filters.js"></script>
-
-    <!-- Controllers -->
-    <script src="app/controllers/search.js"></script>
-    <script src="app/controllers/loginAndRedirect.js"></script>
-    <script src="app/controllers/tagDetail.js"></script>
-    
 </body>
 </html>
