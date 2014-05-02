@@ -17,7 +17,7 @@
                 <th>TimeStamp</th>
                 <th>Value</th>
             </tr>
-            <tr ng-repeat="result in vm.queryResults">
+            <tr ng-repeat="result in vm.queryResults" ng-dblclick="vm.tagSelected(result.webId)">
                 <td>{{result.tagName}}</td>
                 <td>{{result.timeStamp}}</td>
                 <td>{{result.value}}</td>

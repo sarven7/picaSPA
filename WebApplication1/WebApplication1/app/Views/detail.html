@@ -1,13 +1,18 @@
 ﻿<section ng-controller="tagDetail as vm">
-    <!--<img id="bigImage"/>
-    <div id="detailsPane">
-        <div class="rowHeader">Name:</div>
-        <div class="rowData">{{card.nameEn}}</div>
-        <div class="rowHeader">Type:</div>
-        <div class="rowData">{{card.typeEn}}</div>
-        <div class="rowHeader">Text:</div>
-        <textarea class="rowData textEdit" rows="5" ng-model="card.textEn" ng-change="update()"></textarea>
-        <div class="rowHeader">Flavor:</div>
-        <div class="rowData">{{card.flavorEn}}</div>
-    </div>-->
+    <div>
+        {{vm.webId}}
+        {{vm.tagDetails}}
+    </div>
+    <table>
+        <tr>
+            <th>Timestamp</th>
+            <th>Value</th>
+            <th>Good</th>
+        </tr>
+        <tr ng-repeat="value in vm.recordedValues">
+            <td>{{value.Timestamp}}</td>
+            <td>{{value.Value}}</td>
+            <td>{{value.Good}}</td>
+        </tr>
+    </table>
 </section>

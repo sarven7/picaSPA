@@ -30,28 +30,5 @@ namespace WebApplication1.Controllers
             // Redirect to authenticate
             return Redirect(redirectUri);
         }
-
-        //[HttpGet]
-        //public void Callback()
-        //{
-
-        //    //HttpContext.Current.Response.RedirectLocation = string.Format("http://localhost:60646/#/search");
-        //    var cookie = new HttpCookie("token", (Request.RequestUri.Query.Replace("?access_token=", "") + "; domain=dstcontrols.pica.pipreview.com; path=/; secure; httponly"));
-        //    HttpContext.Current.Request.Cookies.Add(cookie);
-        //    HttpContext.Current.Response.Cookies.Add(cookie);
-
-        //    HttpContext.Current.Response.RedirectPermanent(string.Format("http://localhost:60646/#/search"));
-            
-            
-            
-        //    //set redirect to search page
-        //    //var redirect = Redirect(string.Format("http://localhost:60646/#/search"));
-
-        //    //add the retrieved cookie
-        //    //redirect.Request.Headers.Add("Set-Cookie", (Request.RequestUri.Query.Replace("?access_", "") + "; domain=dstcontrols.pica.pipreview.com; path=/; secure; httponly"));
-
-        //    //go
-        //    return;
-        //}
     }
 }
