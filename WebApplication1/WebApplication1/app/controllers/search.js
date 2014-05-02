@@ -5,25 +5,18 @@
 
     // TODO: replace app with your module name
     angular.module('mainApp').controller(controllerId,
-        ['$scope', 'dataService', searchController]);
+        ['$scope','$rootScope', 'dataService', searchController]);
 
-    function searchController($scope, dataService) {
+    function searchController($scope, $rootScope, dataService) {
         var vm = this;
-        vm.query = null;
-        vm.cards = null;
+        vm.queryResults = null;
+        var resultsIn = $rootScope.$on('newResults', function (event, eventArgs) { vm.queryResults = eventArgs });
+        var onDestroy = $scope.$on('$destroy', function () { resultsIn();})
+        
 
-        vm.doRequest = function doRequest(event) {
-            dataService.queryPoints(null)
-                .success(successC)
-                .error(error);
+        vm.doRequest = function doRequest(queryString) {
+            vm.queryResults = [];
+            dataService.queryPoints(queryString);
         };
-
-        function successC(data) {
-            vm.cards = data;
-        };
-        function error(data, status, headers, config) {
-            alert(data);
-        };
-
     }
 })();

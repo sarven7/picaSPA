@@ -17,10 +17,10 @@
                 <th>TimeStamp</th>
                 <th>Value</th>
             </tr>
-            <tr ng-repeat="card in vm.cards">
-                <td>{{card.tagName}}</td>
-                <td>{{card.timeStamp}}</td>
-                <td>{{card.value}}</td>
+            <tr ng-repeat="result in vm.queryResults">
+                <td>{{result.tagName}}</td>
+                <td>{{result.timeStamp}}</td>
+                <td>{{result.value}}</td>
             </tr>
         </table>
     </div>

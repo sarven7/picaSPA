@@ -1303,9 +1303,6 @@
     <member name="T:System.Net.Http.Formatting.MediaTypeFormatterMatchRanking">
       <summary> Contains information about the degree to which a <see cref="T:System.Net.Http.Formatting.MediaTypeFormatter" /> matches the   explicit or implicit preferences found in an incoming request. </summary>
     </member>
-    <member name="F:System.Net.Http.Formatting.MediaTypeFormatterMatchRanking.None">
-      <summary> No match was found </summary>
-    </member>
     <member name="F:System.Net.Http.Formatting.MediaTypeFormatterMatchRanking.MatchOnCanWriteType">
       <summary> Matched on a type, meaning that the formatter is able to serialize the type.</summary>
     </member>

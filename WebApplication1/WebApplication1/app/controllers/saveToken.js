@@ -9,6 +9,5 @@
     function saveToken($scope, $window, $location, dataService) {
         dataService.setToken($window.location.href.split("access_token=")[1]);
         $location.path("/search");
-        //$window.location.href = "http://localhost:60646/#/search";
     }
 })();

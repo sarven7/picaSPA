@@ -13,3 +13,4 @@ C:\picaSPA\WebApplication1\WebApplication1\bin\System.Web.Http.xml
 C:\picaSPA\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.xml
 C:\picaSPA\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\picaSPA\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\picaSPA\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
