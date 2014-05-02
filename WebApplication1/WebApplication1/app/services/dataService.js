@@ -19,7 +19,7 @@
 
         function queryPoints(queryString) {
 
-            $http({ method: 'get', responseType: 'json', url: urlBase, widthCredentials: true })
+            $http({ method: 'get', responseType: 'json', url: urlBase, withCredentials: true })
             return $http.get(urlBase);
         }
 

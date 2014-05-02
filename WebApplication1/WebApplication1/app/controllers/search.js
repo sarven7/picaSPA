@@ -5,18 +5,14 @@
 
     // TODO: replace app with your module name
     angular.module('mainApp').controller(controllerId,
-        ['$scope', '$rootScope', '$http', 'dataService', searchController]);
+        ['$scope', 'dataService', searchController]);
 
-    function searchController($scope, $rootScope, $http, dataService) {
+    function searchController($scope, dataService) {
         var vm = this;
-        $scope.title = 'Search';
-        $scope.activate = activate;
-        vm.doRequest = doRequest;
-        
-        function activate() { }
+        vm.query = null;
+        vm.cards = null;
 
-        function doRequest() {
-            var cookies = document.cookie;
+        vm.doRequest = function doRequest(event) {
             dataService.queryPoints(null)
                 .success(successC)
                 .error(error);

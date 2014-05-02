@@ -4,11 +4,11 @@
     var controllerId = 'saveToken';
 
     // TODO: replace app with your module name
-    angular.module('mainApp').controller(controllerId,
-        ['$scope','dataService', saveToken]);
+    angular.module('mainApp').controller(controllerId, ['$scope', '$window', '$location', 'dataService', saveToken]);
 
-    function saveToken($scope, dataService) {
-        dataService.setToken(window.location.href.split("access_token=")[1]);
-        window.location.href = "http://localhost:60646/#/search";
+    function saveToken($scope, $window, $location, dataService) {
+        dataService.setToken($window.location.href.split("access_token=")[1]);
+        $location.path("/search");
+        //$window.location.href = "http://localhost:60646/#/search";
     }
 })();

@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\controllers\saveToken.js" />
+    <Content Include="app\views\saveToken.html" />
     <Content Include="app\views\redirectToLogin.html" />
     <Content Include="packages.config" />
     <Content Include="scripts\angular-animate.min.js.map" />

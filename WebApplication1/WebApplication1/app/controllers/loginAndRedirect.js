@@ -5,9 +5,9 @@
 
     // TODO: replace app with your module name
     angular.module('mainApp').controller(controllerId,
-        ['$scope', loginAndRedirect]);
+        ['$scope','$window', loginAndRedirect]);
 
-    function loginAndRedirect($scope) {
-        window.location.href = "http://localhost:60646/Login/Index";
+    function loginAndRedirect($scope, $window) {
+        $window.location.href = "http://localhost:60646/Login/Index";
     }
 })();

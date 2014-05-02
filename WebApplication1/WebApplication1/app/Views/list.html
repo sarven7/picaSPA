@@ -4,15 +4,15 @@
     </header>
 
     <form class="filter" name="filterForm">
-        <input ng-model="query">
+        <input ng-model="vm.query">
         <button ng-click="vm.doRequest($event)">Search</button>
     </form>
     <section>
-        <div id="cardsList">
-            <div ng-repeat="card in vm" class="cardItem">
-                {{card}}
+        <!--<div id="cardsList">
+            <div ng-repeat="cards in vm.cards" class="cardItem">
+                {{cards.card}}
             </div>
-        </div>
+        </div>-->
     </section>
 </div>
 

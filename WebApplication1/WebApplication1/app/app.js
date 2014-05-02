@@ -19,7 +19,7 @@
                     controller: 'tagDetail'
                 }).
                 when('/saveToken', {
-                    templateUrl: 'app/views/redirectToLogin.html',
+                    templateUrl: 'app/views/saveToken.html',
                     controller: 'saveToken'
                 }).
                 otherwise({
