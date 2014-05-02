@@ -49,10 +49,6 @@ section {
     width: 100%;
 }
 
-#cardsList {
-    margin: 20px;
-}
-
 img.small {
     width: 140px;
     display: block;
@@ -142,3 +138,47 @@ img.small {
         -moz-transform: scaleX(0);
         opacity: 0;
     }
+
+
+
+.tagsTable {
+    margin: 0px;
+    padding: 0px;
+    width: 80%;
+    border-spacing: 0px;
+    margin: auto;
+    line-height: 2em;
+}
+
+    .tagsTable table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .tagsTable tr:nth-child(odd) {
+        background-color: #aad4ff;
+    }
+
+    .tagsTable tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    .tagsTable td {
+        vertical-align: middle;
+        border: 1px solid #000000;
+        border-width: 0px 1px 1px 0px;
+        text-align: left;
+        padding: 7px;
+        font-size: 10px;
+        font-family: Arial;
+        font-weight: normal;
+        color: #000000;
+    }
+    .tagsTable th {
+    border: solid 1px;
+    }
+

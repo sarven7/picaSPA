@@ -9,3 +9,13 @@ C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\WebAp
 C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\WebApplication1.pdb
 C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Web.Http.dll
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.dll
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Web.Providers.dll
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.dll
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Web.Http.xml
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.xml
+C:\Users\sbuyuker\Documents\picaSPAOwn\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.xml

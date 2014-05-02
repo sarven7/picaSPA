@@ -1,19 +1,27 @@
 ﻿<div data-ng-controller="search as vm">
-    <header>
-        <div class="text">PICA SPA</div>
-    </header>
 
-    <form class="filter" name="filterForm">
-        <input ng-model="query">
-        <button ng-click="vm.doRequest($event)">Search</button>
-    </form>
-    <section>
-        <div id="cardsList">
-            <div ng-repeat="card in vm" class="cardItem">
-                {{card}}
-            </div>
-        </div>
-    </section>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="tagsTable">
+        <img style="margin-left:35%; width:30%;" src="../app/content/images/pica-spa.gif" />
+        <form class="filter" name="filterForm">
+            <input size=50 ng-model="searchText"><br />
+            <button ng-click="vm.doRequest(searchText)">PICA Search</button>
+            <button onclick="window.open('http://www.oddsmaker.ag/casino/')">Feeling Lucky</button>
+
+        </form>
+
+        <br /><br /><br />
+        <table>
+            <tr>
+                <th>Tag Name</th>
+                <th>TimeStamp</th>
+                <th>Value</th>
+            </tr>
+            <tr ng-repeat="card in vm.cards">
+                <td>{{card.tagName}}</td>
+                <td>{{card.timeStamp}}</td>
+                <td>{{card.value}}</td>
+            </tr>
+        </table>
+    </div>
 </div>
-
-

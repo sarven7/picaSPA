@@ -1,8 +1,8 @@
 ﻿(function () {
     'use strict';
     
-    var mainApp = angular.module('mainApp', ['ngRoute','ngAnimate']);
-
+    var mainApp = angular.module('mainApp', ['ngRoute', 'ngAnimate', 'customFilters']);
+ 
     mainApp.config(['$routeProvider', '$httpProvider',
         function($routeProvider, $httpProvider) {
             $routeProvider.
