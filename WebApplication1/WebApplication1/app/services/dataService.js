@@ -48,9 +48,15 @@
                     $http({ method: 'get', responseType: 'json', url: items[k].tagDetailUrl, withCredentials: true })
                         .then(function pointQuerySuccess(results) {
                             for (var j = 0; j < items.length; j++) {
-                                if(items[j].tagDetailUrl == results.config.url) {
-                                    items[j].value = results.data.Value;
+                                if (items[j].tagDetailUrl == results.config.url) {
                                     items[j].timeStamp = results.data.Timestamp.toLocaleString();
+                                    if (results.data.Value.Name !== undefined) {
+                                        items[j].value = results.data.Value.Name;
+                                    }
+                                    else {
+                                        items[j].value = results.data.Value;
+                                    }
+                                    
                                     $rootScope.$broadcast('newResults', items);
                                 }
                             }
